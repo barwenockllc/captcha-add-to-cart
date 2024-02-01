@@ -33,7 +33,7 @@ define(
                 addCaptchaValidation: function () {
                     return new Promise((resolve) => {
                         let recaptchaScript = document.createElement('script');
-                        let googleApiKey = '6LfzGWIpAAAAACOa8X9N46UJVbQuaIYIIdyxRF1s';
+                        let googleApiKey = 'YOUR_RECAPTCHA_SITE_KEY';
                         let captchaResult = true;
                         recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?render=' + googleApiKey;
                         document.head.appendChild(recaptchaScript);
